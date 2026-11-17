@@ -1,0 +1,23 @@
+{
+    "name": "ramj0002/xyr-payments-reliability",
+    "description": "Stripe payments for the XYR e-commerce site, with webhook verification, idempotent event handling, reconciliation and quarantine of mismatched records.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": { "Xyr\\Payments\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Xyr\\Payments\\Tests\\": "tests/" }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
